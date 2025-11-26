@@ -46,6 +46,15 @@ let toys1 = [
 {
 
     name: "Большой шар с рисунком цветка",
+    count: 1,
+    year: 2000,
+    shape: "шар",
+    color: "черный",
+    size: "большой",
+    favorite: false
+},
+{
+    name: "Большой шар с рисунком солнца",
     count: 2,
     year: 1960,
     shape: "шар",
@@ -55,32 +64,48 @@ let toys1 = [
 },
 {
     name: "Большой шар с рисунком цветка",
-    count: 2,
-    year: 1960,
+    count: 3,
+    year: 2025,
     shape: "шар",
-    color: "желтый",
-    size: "большой",
+    color: "синий",
+    size: "средний",
     favorite: false
 },
 {
-    name: "Большой шар с рисунком цветка",
-    count: 2,
-    year: 1960,
+    name: "Большой шар с рисунком мячика",
+    count: 4,
+    year: 1999,
     shape: "шар",
-    color: "желтый",
-    size: "большой",
-    favorite: false
-},
-{
-    name: "Большой шар с рисунком цветка",
-    count: 2,
-    year: 1960,
-    shape: "шар",
-    color: "желтый",
-    size: "большой",
+    color: "красный",
+    size: "маленький",
     favorite: false
 }
 ]
 toys.forEach(toy => {
     let updateToys=toys.map(toy.name+'-'+toy.color+', форма:'+toy.shape+', количество:'+toy.count);
 })
+let tree = {
+    type: "snowy",
+    background: "living_room",
+    garland: "milti",
+    toys: [
+        { id: 1, x: 120, y: 240, type: "ball_red"},
+        { id: 1, x: 120, y: 240, type: "ball_red"}
+    ]
+};
+user.name="vlad";
+user.age=30;
+delete user.name;
+console.log(user);
+let oridginal = { a: 1,b: 2};
+let copy = Object.asssign({}, oridginal);
+copy.a = 99;
+console.log(oridginal.a);
+
+let oridginal1 = { a: 1,b: 2};
+let copy = {...oridginal};
+copy.b = 300;
+console.log(oridginal.b);
+
+
+
