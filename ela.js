@@ -103,8 +103,8 @@ copy.a = 99;
 console.log(oridginal.a);
 
 let oridginal1 = { a: 1,b: 2};
-let copy = {...oridginal};
-copy.b = 300;
+let copyy = {...oridginal};
+copyy.b = 300;
 console.log(oridginal.b);
 
 
