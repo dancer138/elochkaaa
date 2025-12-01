@@ -108,4 +108,12 @@ copyy.b = 300;
 console.log(oridginal.b);
 
 
-
+const toysGrid = document.querySelector(".toys-grid");
+toys.forEach((toy, index)) => {
+    // ...
+}
+const coutBOX = document/CustomElement("div");
+coutBOX.textContent = toy.count;
+coutBOX.style =
+coutBOX.textContent =
+coutBOX.textContent =

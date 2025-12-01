@@ -22,17 +22,14 @@ body {
     letter-spacing: 1;
 }
 
-.button {
+.button1 {
     background-color: transparent;
     color: white; /* Белый цвет текста */
     border-radius: 25px; /* Скруглённые углы */
     font-size: 34px; /* Размер шрифта */
     cursor: pointer; /* Указатель-палец при наведении */
-    width: 550px; /* Ширина в пикселях */
-    height: 230px; /* Высота в пикселях */
     display: block;  /* Превращаем кнопку в блочный элемент */
     margin: 0 auto;    /* Центрируем по горизонтали */
-    margin-top: 300px; /*НАСТРОИТЬ КНОПКУ*/
     border-color: rgb(0, 174, 255);
   }
 
