@@ -23,15 +23,59 @@ body {
 }
 
 .button1 {
-    background-color: transparent;
-    color: white; /* Белый цвет текста */
-    border-radius: 25px; /* Скруглённые углы */
-    font-size: 34px; /* Размер шрифта */
-    cursor: pointer; /* Указатель-палец при наведении */
-    display: block;  /* Превращаем кнопку в блочный элемент */
-    margin: 0 auto;    /* Центрируем по горизонтали */
-    border-color: rgb(0, 174, 255);
-  }
+        text-decoration: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    text-align: center;
+    padding: 65px;
+        border-radius: 50px;
+        font-size: 50px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background:transparent;
+        backdrop-filter: blur(10px);
+        border: 2px solid #fff;
+    }
+    .start{
+        text-decoration: none;
+        position: absolute;
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;;
+       padding: 2px 100px ;
+        border-radius: 50px;
+        font-size: 50px;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 225, 255, 0.5);
+        background:transparent;
+        backdrop-filter: blur(10px);
+        border: 2px solid #fff;
+    
+         
+        }
+    
+    .start:hover{
+        border-color: rgb(91, 210, 214);
+    }
+    .button1:hover{
+        border-color: rgb(91, 210, 214);
+    }
 
-
-
+    .layout {
+        flex: 1 0 auto;
+        display: grid;
+        grid-template-columns: 400px 1fr 400px;
+        height: calc(100vh - 60px);
+        overflow: hidden;
+        height: auto;
+      }
+      
+      .left-panel, .right-panel {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 20px;
+        overflow-y: auto;
+      }

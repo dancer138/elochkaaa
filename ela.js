@@ -80,10 +80,22 @@ let toys1 = [
     size: "маленький",
     favorite: false
 }
-]
+];
+
+const toysGrid = document.querySelector(".toys-grid");
+toys.forEach((toy, index) => {
+    const coutBOX = document/CustomElement("div");
+   
+    coutBOX.textContent = toy.count;
+    coutBOX.style.color = "white";
+
+
+})
+
 toys.forEach(toy => {
     let updateToys=toys.map(toy.name+'-'+toy.color+', форма:'+toy.shape+', количество:'+toy.count);
 })
+
 let tree = {
     type: "snowy",
     background: "living_room",
@@ -107,13 +119,53 @@ let copyy = {...oridginal};
 copyy.b = 300;
 console.log(oridginal.b);
 
+const treeArea=document.querySelector(".tree-area");
+treeArea.addEventListener("dragover", e => e.preventDefault());
+treeArea.addEventListener("drop", e=> {
+    e.preventDefault();
+    })
+    const xPos = x - 40;
+    const yPos = y - 40;
+    const img = document.createElement("img");
+    img.src=toy.image;
+    img.classList.add("toy-on-tree");
+    img.style.left=xPos+"px";
+    img.style.top=yPos+"px";
+    img.addEventListener("click", () => {
 
-const toysGrid = document.querySelector(".toys-grid");
-toys.forEach((toy, index)) => {
-    // ...
-}
-const coutBOX = document/CustomElement("div");
-coutBOX.textContent = toy.count;
-coutBOX.style =
-coutBOX.textContent =
-coutBOX.textContent =
+    }
+    )
+    toysGrid.children[toyIndex].children[1].textContent=toy.count;
+    img.addEventListener("clicl",() => {
+        img.remove();
+    })
+    toy.count +=1;
+    toysGrid.children[toyIndex].children[1].textContent=toy.count;
+    let currentTree = {
+        type: "",
+        garland: "",
+        toys: [],
+      
+        setTree(newType) {
+          this.type = newType;
+        },
+      
+        setGarland(newGarland) {
+          this.garland = newGarland;
+        },
+      
+        addToy(toy) {
+          this.toys.push(toy);
+        },
+      
+        showInfo() {
+          console.log("Ёлка:", this.type);
+          console.log("Гирлянда:", this.garland);
+          console.log("Игрушки:", this.toys);
+        }
+      };
+    
+    
+
+
+
