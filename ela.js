@@ -326,9 +326,36 @@ fetch("/data")
   console.log("Данный получены", data);
 });
 
+const saveTreeBtn=document.getElementById("save-result-tree-btn");
 
-    
-    
+  saveTreeBtn.addEventListener("click",()=>{
+   const ResultCurrentTreeData=getResultCurrentTreeData();
+   console.log(ResultCurrentTreeData);
 
+   const ResultCurrentTreeDataJSON=JSON.stringify(ResultCurrentTreeData);
+   console.log(ResultCurrentTreeDataJSON);
+   fetch ("/save-tree",{
+    method:"POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body:ResultCurrentTreeJSON
+   }) 
+   .then(response =>{
+    if(!response.ok){
+      throw new Error("Ошибка при сохранении елки");
+    }
+    return response.json();
+   })
+   .then(data => {
+    console.log("Ответ сервера:", data);
+    alert("Елка сохранена");
+   })
+   .catch(error => {
+    console.error("Ошибка", error);
+    alert("Не удалось сохранить елку");
+   });
+
+  })
 
 
