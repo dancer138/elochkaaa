@@ -315,6 +315,17 @@ let treeData = {
       console.log("Игрушки:", this.toys);
     }
 };
+fetch("/data")
+  .then(response => {
+    if (!responce.ok) {
+      throw new Error("Ошибка сервера");
+    }
+    return response.json();
+  })
+.then(data => {
+  console.log("Данный получены", data);
+});
+
 
     
     
