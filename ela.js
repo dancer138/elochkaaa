@@ -357,5 +357,18 @@ const saveTreeBtn=document.getElementById("save-result-tree-btn");
    });
 
   })
+const Human = {
+  init: function(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    return this;
+  },
+};
 
+
+const chris = Object.create(Human);
+chris.init('Chris', 'Coyier');
+
+console.log(chris.firstName); 
+console.log(chris.lastName);
 
