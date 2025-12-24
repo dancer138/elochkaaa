@@ -372,3 +372,22 @@ chris.init('Chris', 'Coyier');
 console.log(chris.firstName); 
 console.log(chris.lastName);
 
+let x=10;
+let y=5;
+let sum= x+y;
+console.log(sum);
+
+let name ="i love JS";
+console.log(name);
+
+let isOnline = true;
+console.log(isOnline);
+
+let n = 7;
+let n2 = 2;
+let sum2= n*n2;
+console.,log(sum2);
+
+let message = "";
+console.log(message);
+
