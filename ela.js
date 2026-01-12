@@ -391,3 +391,42 @@ console.,log(sum2);
 let message = "";
 console.log(message);
 
+setTiomeout(() => {
+  console.log("привет");
+
+}, 2000);
+const name1 = "Alex";
+
+setTiomeou (() => {
+  console.log("привет ", + name1);
+
+}, 1000);
+setInterval(() => {
+  console.log("прошла 1 секунда");
+
+}, 1000);
+let const10 = 1;
+setInterval(() => {
+  console.log(const1 + const1);
+
+}, 1000);
+let const1 = 1;
+let const2 = 2;
+let const3 = 3;
+let const4 = 4;
+let const5 = 5;
+setInterval(() => {
+  console.log( const1 );
+
+}, 1000);
+
+ let time = 5;
+ const id = setInterval(() => {
+  console.log(time);
+  time---;
+
+  if (time === 0) {
+    console.log("Старт");
+    clearInterval(id);
+    }
+ }, 1000);
